@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-md-3">
+        <div class="my-3">{{ channelName$ | async }}</div>
+        <div class="input-group mb-3 container-custom-increment">
+            <input type="text" class="form-control" placeholder="enter value" aria-label="enter value" aria-describedby="customincremento"  [(ngModel)]="value" />
+            <div class="input-group-append">
+                <button class="btn btn-danger" (click)="onAdd()">Add to value</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <button (click)="onChangeChannelName()">change channel name</button>
+</div>
